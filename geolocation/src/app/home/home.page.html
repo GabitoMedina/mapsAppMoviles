@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-list>
+      <ion-item>
+        <ion-label position="fixed">Latitud</ion-label>
+        <ion-badge color="danger" slot="end">{{latitude}}</ion-badge>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="stacked">Longitud</ion-label>
+        <ion-badge color="danger" slot="end">{{longitude}}</ion-badge>
+        
+      </ion-item>
+    </ion-list>
+
+    <button ion-button (click)="geolocalizar()">Get Location</button>
+    
+  </div>
+</ion-content>
